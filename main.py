@@ -3,12 +3,12 @@ from utils import validate_quantity, format_message
 
 def restock_item(db, item, amount):
     """
-    Restockea la cantidad de un artículo en la base de datos.
+    Restoca una cantidad específica de un artículo en el inventario.
 
     Args:
-        db (InventoryDB): Instancia de la clase InventoryDB que maneja la base de datos.
-        item (str): Nombre del artículo a restockear.
-        amount (int): Cantidad a agregar al stock del artículo.
+        db (InventoryDB): Instancia del objeto InventoryDB para interactuar con el inventario.
+        item (str): Nombre del artículo a restocar.
+        amount (int): Cantidad a restocar. Debe ser un número positivo.
 
     Returns:
         None
